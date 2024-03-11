@@ -173,7 +173,8 @@ iframe {
     margin: auto;
 }
 
-/* Formulario*/
+/* contacto*/
+
 
 form{
     background-image: url(../img/camino.jpeg);
@@ -213,4 +214,94 @@ textarea {
     margin-top: 10;
  }
 
- /*Diseño Responsivo*/
+/*Diseño Responsivo*/
+ /*tablet*/
+ @media (min-width: 768px) and (max-width: 992px) {
+
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.5rem;
+  }
+}
+/*contacto*/
+h1 {
+  font-size: 28px;
+}
+
+.formulario label {
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+  text-align: right;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: 65%;
+  box-sizing: border-box;
+}
+
+.formulario .btnFormulario {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*movil*/
+@media (max-width: 576px) {
+  
+  .banner .contenido h1 {
+    font-size: 24px;
+  }
+  .banner .contenido p {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario .btnFormulario {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Escritorio */
+@media (min-width: 992px) {
+ 
+ /*Contacto*/
+  h1 {
+    font-size: 32px;
+  }
+
+  .formulario label {
+    width: 20%;
+    margin-right: 3%;
+    text-align: right;
+  }
+
+  .formulario input[type="text"],
+  .formulario textarea {
+    width: 70%;
+    box-sizing: border-box;
+  }
+
+  .formulario .btnFormulario {
+    width: auto;
+    margin-top: 0;
+  }
+}
