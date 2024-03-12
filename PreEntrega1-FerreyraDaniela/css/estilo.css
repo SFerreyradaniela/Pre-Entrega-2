@@ -1,19 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+
 *{
     margin:0;
     padding:0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:"Montserrat", sans-serif ;
 }
 
 /* Body */
 
 body{
-    background-color: rgba(169, 199, 114, 0.966);
+    background-color: rgba(202, 212, 228, 0.966);
+}
+
+.navbar{
+     width: 100%;
+     position:fixed;
+     top: 0;
+     left: 0;
+     z-index: auto;
+     background-color: #ccc;
+}
+
+.navbar-brand{
+  color: rgba(2, 80, 2, 0.836) !important;
 }
 
 .navbar-brand img{
-    height: 90px;
+    height: 70px;
 }
 
+h1{
+  color: rgba(93, 93, 155, 0.911);
+  text-align: center;
+  padding: 30px;
+  text-shadow: 2px 2px 0 wheat;
+}
+
+/*Banner Home*/
+.banner {
+  background-image: url(../img/monca.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  min-height: 500px;
+}
+
+.banner .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.banner .btn {
+  display: inline-block;
+  background-color: #e5ff00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #e5ff00;
+}
+
+/* Nosotros */
+main {
+  color: rgba(93, 93, 155, 0.911);
+  text-align: center;
+  padding: 30px;
+  text-shadow: 2px 2px 0 wheat;
+}
+
+.contenedorNosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit) minmax(250px, 1fr);
+  gap: 50px;
+}
+
+.imagen-casa img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+/*Jumbotron*/
 .jumbotron{
     height: 600px;
     background-image: url(../img/arroyo.jpeg);
@@ -23,17 +110,13 @@ body{
     font-weight: bold;
 }
 
-h2{
+h2 {
     text-align: center;
-    background-color: aquamarine;
     padding: 20px;
     font-weight: bold;
-    color: black;
-    text-shadow: 0 0 5px #000;
+    color:rgba(93, 93, 155, 0.911);
     margin-bottom: 0;
 }
-
-
 
 .servicios{
     height: 600px;
@@ -57,45 +140,6 @@ h2{
     padding: 20px;
 }
 
-/*Banner*/
-.banner {
-    background-image: url('../img/pp.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .banner .content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .banner h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .banner p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .banner .btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .banner .btn:hover {
-    background-color: #ff944d;
-  }
 
 
 /* tarjeta servicios */
@@ -122,18 +166,6 @@ h2{
     font-size: 0.9em;
   }
 
-/* Main */
-
-main{
-    margin:30px;
-    padding:30px;
-}
-
-h1{
-    text-align: left;
-    margin: 20px 0px; 
-}
-
 
 /* Footer */
 
@@ -151,19 +183,6 @@ footer a{
     letter-spacing: 10px;
 }
 
-/* Nosotros */
-
-.contenedorNosotros {
-    margin: 20px;
-    border: 4px solid black;
-    border-radius: 10px;
-}
-
-.ImgNosotros{
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 
 /* Iframe */
