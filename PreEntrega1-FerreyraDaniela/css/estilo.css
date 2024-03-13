@@ -19,6 +19,7 @@ body{
      left: 0;
      z-index: auto;
      background-color: #ccc;
+     text-shadow:1px 1px #333;
 }
 
 .navbar-brand{
@@ -86,17 +87,25 @@ main {
   text-shadow: 2px 2px 0 wheat;
 }
 
-.contenedorNosotros {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagen-casa {
   display: grid;
-  grid-template-columns: repeat(auto-fit) minmax(250px, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.imagen-casa img {
-  width: 100%;
-  height: auto;
+.ImgNosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-
 
 
 
