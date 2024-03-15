@@ -9,7 +9,7 @@
 /* Body */
 
 body{
-    background-color: rgba(202, 212, 228, 0.966);
+    background-color: rgb(241, 214, 173);
 }
 
 .navbar{
@@ -18,20 +18,19 @@ body{
      top: 0;
      left: 0;
      z-index: 1000;
-     background-color: #ccc;
-     text-shadow:1.5px 1.5px #333;
-     font-size: 24px;
+     background-color: orange;
+     font-size: 27px;
      font-weight: bold;
 
 }
 
 .navbar-brand{
-  color: rgba(2, 80, 2, 0.836) !important;
-  font-size: 24px;
+  color: rgb(167, 167, 217) !important;
+  font-size: 27px;
 }
 
 .navbar-brand img{
-    height: 73px;
+    height: 78px;
 }
 
 h1{
@@ -96,25 +95,71 @@ main h1{
   font-size: 2,5rem;
   margin-top: 40px;
   margin-bottom: 5px;
+  margin-top: 100px;
 }
 
 main h2{
-  font-size: 2rem;
-  margin-top: 10px;
+  font-size: 25px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  color: black;
+
 }
 
- .carousel-item img{
-  width: 30%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 100px;
- }
+   /*galeria de imagenes*/
+.container-img{
+  width:100%;
+  max-width: 1100%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
 
- .carousel {
-  margin: 0 auto;
-  max-width: 30%;
- }
+.container-img .box-img figure{
+  width: 100%;
+  height: 100%;
+}
+
+.container-img .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1){
+  grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4){
+  grid-row-start: span 2;
+}
+
+@media screen and (max-width:800px){
+  .container-img{
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+    grid-template-rows: 200px;
+  }
+
+  .container-img .box-img:nth-child(1){
+    grid-column-start: span 1;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container-img{
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .container-img .box-img img{
+    height: 200px;
+  }
+}
 
 /*SERVICIOS*/
 /*Jumbotron*/
@@ -131,7 +176,7 @@ main h2{
 h1 {
    margin-top: 70px;  
    text-align: center;
-   font-size: 2.5 rem;
+   font-size: 50px;
     padding: 20px;
     font-weight: bold;
     color:rgba(93, 93, 155, 0.911);
@@ -140,7 +185,7 @@ h1 {
 
 p{
   text-align: center;
-  font-size: 19px;
+  font-size: 20px;
   text-shadow: 2px 2px  #333;
 }
 
@@ -211,21 +256,24 @@ header-card img{
  }
 
 footer {
-    margin: 20p;
+    margin: 20px;
     padding: 20px;
-    border-top: 1px solid rgb(145, 88, 14);
+    border-top: 3px solid black ;
     text-align: center;
+    background-color: orange;
+    letter-spacing: 8px;
 }
 
 footer a{
     text-decoration: none;
     font-size: 30px;
     color: black;
-    letter-spacing: 10px;
+    letter-spacing: 30px;
 }
 
-
-
+.p{
+  font-weight: bold;
+}
 /* Iframe */
 
 iframe {
