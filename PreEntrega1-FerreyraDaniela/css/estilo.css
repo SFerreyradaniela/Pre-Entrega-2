@@ -17,7 +17,7 @@ body{
      position:fixed;
      top: 0;
      left: 0;
-     z-index: auto;
+     z-index: 1000;
      background-color: #ccc;
      text-shadow:1px 1px #333;
 }
@@ -61,7 +61,7 @@ h1{
 }
 
 .banner p {
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -73,10 +73,11 @@ h1{
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
 .banner .btn:hover {
-  background-color: #e5ff00;
+  background-color: rgb(109, 128, 0);
 }
 
 /* Nosotros */
@@ -87,28 +88,31 @@ main {
   text-shadow: 2px 2px 0 wheat;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+main h1{
+  font-size: 2,5rem;
+  margin-top: 40px;
+  margin-bottom: 5px;
 }
 
-.imagen-casa {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  margin-bottom: 20px;
+main h2{
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.ImgNosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
+ .carousel-item img{
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 100px;
+ }
 
+ .carousel {
+  margin: 0 auto;
+  max-width: 30%;
+ }
 
-
+/*SERVICIOS*/
 /*Jumbotron*/
 .jumbotron{
     height: 600px;
@@ -117,14 +121,30 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     font-weight: bold;
+    position: relative;
 }
 
-h2 {
-    text-align: center;
+h1 {
+   margin-top: 70px;  
+   text-align: center;
+   font-size: 2.5 rem;
     padding: 20px;
     font-weight: bold;
     color:rgba(93, 93, 155, 0.911);
-    margin-bottom: 0;
+    margin-bottom: 0;  
+}
+
+p{
+  text-align: center;
+  font-size: 19px;
+  text-shadow: 2px 2px  #333;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .servicios{
@@ -136,46 +156,48 @@ h2 {
     font-weight: bold;
 }
 
-
-
-.nleft{
-    background-image:url(img/field-5326822_1280.jpg);
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-}
-
-.nright{
-    padding: 20px;
-}
-
-
-
 /* tarjeta servicios */
-.card {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  .card-content {
-    padding: 10px;
-  }
-  .card-title {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  .card-description {
-    font-size: 0.9em;
-  }
+img {
+  max-width: 80%;
+  margin-top: 15px;
+}
 
+.card{
+  max-width: 350px;
+  background-color: rgb(162, 204, 212);
+  border-radius: 8px;
+  margin: 50px;
+  box-shadow: 0 0 12px #d7d7d7;
+}
 
+header-card img{
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card{
+  margin-top: 1rem;
+}
+
+.categoria-card span{
+  background-color: #e5ff00;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+
+.card footer{
+  padding: 0 1 rem;
+}
+
+.card-wrap{
+  display: flex;
+  flex-flow: wrap;
+}
 /* Footer */
 
 footer {
