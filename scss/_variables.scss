@@ -3,6 +3,7 @@
     text-align: center;
     padding: 30px;
     text-shadow: 2px 2px 0 wheat;
+    width: 100%;
   }
 
   @mixin h2{
@@ -16,5 +17,5 @@
   }
 
   /*Variables Color*/
-  $color-beige: rgba(244, 197, 67, 0.911);
-  $color-amarillo: #e5ff00;
+  $color-beige: rgba(240, 211, 131, 0.796);
+  $color-amarillo: #c3d7088e;
